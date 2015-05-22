@@ -6,12 +6,12 @@ require_relative 'lib/students_importer'
 
 desc "create the database"
 task "db:create" do
-  touch 'db/ar-students.sqlite3'
+  touch 'db/recipe_program.sqlite3'
 end
 
 desc "drop the database"
 task "db:drop" do
-  rm_f 'db/ar-students.sqlite3'
+  rm_f 'db/recipe_program.sqlite3'
 end
 
 desc "reload the database"
@@ -27,7 +27,7 @@ task "db:migrate" do
   end
 end
 
-desc "populate the test database with sample data"
+desc "populate the database with data"
 task "db:populate" do
   StudentsImporter.import
 end
