@@ -29,7 +29,7 @@ end
 
 desc "populate the database with data"
 task "db:populate" do
-  StudentsImporter.import
+  DataImporter.import
 end
 
 desc 'Retrieves the current schema version number'
