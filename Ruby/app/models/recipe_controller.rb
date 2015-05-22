@@ -10,19 +10,11 @@ class RecipeController < ActiveRecord::Base
     #printing of ingredients with qty
   end
 
-  def print_instructions
-    #print instructions for recipe
-  end
-
   def help
     # shows methods avalible for users
   end
 
-  def add_to_list(description)
-    #add recipe
-  end
-
-  def delete_from_list(id)
-    Recipe.delete(id)
+  def select_ingredients
+    #select ingredients taged to recipe
   end
 end
