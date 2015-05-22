@@ -1,5 +1,5 @@
-require_relative 'config/application'
-require_relative 'app/controllers/tasks_controller.rb'
+require_relative './db/config'
+require_relative './app/controllers/recipe_controller'
 
 recipe_controller = RecipeController.new
 
