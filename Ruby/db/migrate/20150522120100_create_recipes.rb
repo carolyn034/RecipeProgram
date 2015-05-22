@@ -8,7 +8,6 @@ class CreateRecipes < ActiveRecord::Migration
       t.string :title
       t.text :instructions
       t.string :course
-      t.integer :ingredient_recipe_id
       t.timestamps null:false
     end
   end
