@@ -5,9 +5,7 @@ require_relative '../app/models/ingredient_recipe'
 # load './app/models/recipe.rb'
 # load './app/models/ingredient.rb'
 # load './app/models/ingredient_recipe.rb'
-Recipe.destroy_all
-Ingredient.destroy_all
-IngredientRecipe.destroy_all
+
 
 data = [
   {
@@ -15,7 +13,7 @@ data = [
     course: "dessert",
     ingredients: [
       {name: "flour", quantity: "150g"},
-      {name: "salt", quantity: ".25tsp"},
+      {name: "salt", quantity: ."25tsp"},
       {name: "unsalted butter", quantity: "10tblsp"},
       {name: "ice water", quantity: "3tblsp"},
       {name: "pumpkin", quantity: "1.75cups"},
@@ -43,7 +41,7 @@ data = [
        {name: "rolled oats", quantity: "1.25cups"},
        {name: "quinoa flour", quantity: ".5cups"},
        {name: "turbinado sugar", quantity: ".66cups"},
-       {name: "grated nutmeg", quantity: ".5tsp"},
+       {name: "grated nutmeg", quantity: {".5tsp"},
        {name: "salt", quantity: ".25tsp"},
        {name: "butter", quantity: "6tblsp"}
       ]
