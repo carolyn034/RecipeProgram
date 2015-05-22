@@ -6,6 +6,10 @@ class Recipe < ActiveRecord::Base
   has_many :ingredients, through: :ingredient_recipes
 
   def to_s
-   #how data will be printing to screen
+   "\n#{self.title}  |#{self.course}|\n#{print_ingredient}"
+  end
+
+  def print_ingredient
+    self.ingredients.map { |ingredient| ingredient.name}
   end
 end

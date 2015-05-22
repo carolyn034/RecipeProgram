@@ -9,4 +9,5 @@ class Ingredient < ActiveRecord::Base
     #select ingredients taged to recipe
   end
 
+
 end
