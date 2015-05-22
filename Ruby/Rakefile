@@ -16,6 +16,12 @@ desc "reload the database"
 task "db:reload" => ["db:drop", "db:create", "db:migrate"] do
 end
 
+desc 'Start IRB with application environment loaded'
+task "console" do
+  exec "irb -r ./app/models/recipe.rb -r ./app/models/ingredient.rb -r ./app/models/ingredient_recipe.rb"
+end
+
+
 desc "migrate the database (options: VERSION=x, VERBOSE=false, SCOPE=blog)."
 task "db:migrate" do
   ActiveRecord::Migrator.migrations_paths << File.dirname(__FILE__) + 'db/migrate'
